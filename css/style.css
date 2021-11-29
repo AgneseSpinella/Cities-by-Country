@@ -1,0 +1,109 @@
+main h1{
+    margin: 5px auto;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.wrapper_countries {
+    border: 2px solid black;
+}
+
+/* card */
+
+.wrapper_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.imgCard {
+    width: 100%;
+    height: 220px;
+    border-image: 1px solid black;
+    border-radius: 4px;
+    border-bottom: outset;
+
+}
+
+
+.card {
+    flex: 0 0 21%;
+    box-shadow: 0 0 25px #424242;
+    padding: 1em;
+    transition: flex-basis 1s ease;
+    margin-top: 0.5em;
+
+}
+    
+.card:hover {
+    flex-basis: 25%;
+}  
+
+
+.card h2 {
+    font-family: 'K2D', sans-serif;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.card:hover p {
+    flex-basis: 25%;
+    opacity: 1;
+}  
+
+
+.card p {
+    font-family: 'K2D', sans-serif;
+    font-style: italic;
+
+    display: block;
+	display: -webkit-box;
+	font-size: 16px;
+	line-height: 1.5;	
+	-webkit-line-clamp: 8;
+	min-height: 190px;
+	-webkit-box-orient: vertical;
+	overflow: auto;
+    opacity: 0.5;
+    transition: opacity 1s ease-out;
+}
+
+
+/* text style  */
+.wrapper_countries h1 {
+    margin: 50px 0px 5px 15px;
+    text-align: left;
+
+    font-size: 2.3em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+/* Countries */
+
+#fra {
+    border: 2px solid blue;
+}
+
+#ita {
+    border: 2px solid green;
+}
+
+#spa {
+    border: 2px solid red;
+}
+
+#port {
+    border: 2px solid greenyellow;
+}
+
+#gre {
+    border: 2px solid wheat;
+}
+
+#ger {
+    border: 2px solid yellow;
+}
+
