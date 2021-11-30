@@ -1,4 +1,5 @@
 const wrapperCountries = document.querySelector(".wrapper_countries");
+const wrapperCard = document.querySelector(".wrapper_card");
 const divFra = document.querySelector("#fra");
 const divIta = document.querySelector("#ita");
 const divSpa = document.querySelector("#spa");
@@ -17,9 +18,12 @@ const displayCountries = (card) => {
         <button class="button" id="read">Leggi tutto</button>
       </div>`;
         }
+            
     })
         .join("");
     divFra.innerHTML = itemFra;
+
+
 
     const itemIta = card.map((card) => {
         if (card.country.name == "Italia") {
@@ -31,6 +35,7 @@ const displayCountries = (card) => {
             </div>`;
         }
     })
+   
         .join("");
     divIta.innerHTML = itemIta;
 
@@ -87,7 +92,10 @@ const displayCountries = (card) => {
     })
         .join("");
     divGer.innerHTML = itemGer;
-};
+
+
+
+};  
 
 
 export { displayCountries }
