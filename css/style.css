@@ -50,12 +50,17 @@ hr {
 }
 
  /* button back */
+.contButton{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+}
+
 #back {
+    position: fixed;
     font-family: 'Permanent Marker', cursive;
     color: black;
-    position: fixed;
-    margin-top: 750px;
-    margin-left: 850px; 
+    
     font-size: 20px;
 
     background-color: rgb(186, 232, 250);
