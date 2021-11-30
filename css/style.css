@@ -1,9 +1,19 @@
+
 main h1{
-    margin: 5px auto;
+    display: block;
+    height: 50px;
+
+    margin: auto;
+    padding: 25px 0;
     text-align: center;
     font-size: 3em;
     font-family: 'Permanent Marker', cursive;
+
+    background-color: black;
+    color: rgb(255, 255, 235);
 }
+
+
 
 .wrapper_countries {
     border: 2px solid black;
@@ -12,10 +22,15 @@ main h1{
 /* card */
 
 .wrapper_card {
+    background-color: rgb(255, 232, 202);
+    border: 4px solid  rgb(231, 204, 169);
+    border-radius: 3px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: fit-content;
+    padding: 2px;
+
 }
 
 .imgCard {
@@ -24,6 +39,8 @@ main h1{
     border-image: 1px solid black;
     border-radius: 4px;
     border-bottom: outset;
+    box-shadow: 0px 2.5px #585858;
+  
 
 }
 
@@ -33,7 +50,8 @@ main h1{
     box-shadow: 0 0 25px #424242;
     padding: 1em;
     transition: flex-basis 1s ease;
-    margin-top: 0.5em;
+    margin: 0.5em 0em;
+    background-color: white;
 
 }
     
@@ -57,7 +75,7 @@ main h1{
 .card p {
     font-family: 'K2D', sans-serif;
     font-style: italic;
-
+    padding: 0px 15px;
     display: block;
 	display: -webkit-box;
 	font-size: 16px;
@@ -68,6 +86,7 @@ main h1{
 	overflow: auto;
     opacity: 0.5;
     transition: opacity 1s ease-out;
+    
 }
 
 
@@ -80,30 +99,24 @@ main h1{
     font-family: 'Permanent Marker', cursive;
 }
 
+/* footer */
 
-/* Countries */
-
-#fra {
-    border: 2px solid blue;
-}
-
-#ita {
-    border: 2px solid green;
-}
-
-#spa {
-    border: 2px solid red;
-}
-
-#port {
-    border: 2px solid greenyellow;
-}
-
-#gre {
-    border: 2px solid wheat;
-}
-
-#ger {
-    border: 2px solid yellow;
-}
-
+/* footer  */
+footer{
+    font-family: 'K2D', sans-serif;
+    margin-top: 50px ;
+    background: black;
+    padding: 40px;
+    text-align: center;
+    color: rgb(255, 255, 235);
+    font-size: 13px;
+    border: none;
+  } 
+  
+  footer a {
+    color: white;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+  }
