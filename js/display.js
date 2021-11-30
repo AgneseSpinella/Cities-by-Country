@@ -14,6 +14,7 @@ const displayCountries = (card) => {
         <img class="imgCard" src="${card.cover_image_url}"></img>
         <h2>${card.name}</h2>
         <p>${card.content}</p>
+        <button class="button" id="read">Leggi tutto</button>
       </div>`;
         }
     })
