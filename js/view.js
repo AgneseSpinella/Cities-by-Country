@@ -1,8 +1,8 @@
 import { render, API } from "./utils.js";
 
 const View = (id = 0) => {
-
-  fetch(`${API}/${id}`)
+    console.log(id)
+  fetch(`${API}`)
     .then((response) => response.json())
     .then((countries) => {
       const container = document.querySelector("#showCard");
