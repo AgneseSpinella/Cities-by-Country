@@ -4,8 +4,7 @@ import { API, render  } from "./utils.js";
 import { displayCountries } from "./display.js";
 import { View } from "./view.js";
 
-/* Query selector */
-const btn = document.querySelectorAll(".button")
+
 
 const loadList = () =>
   fetch(API)
@@ -36,4 +35,3 @@ window.addEventListener("hashchange", () => {
     })
      
 
-/* Chiamata funzioni */
