@@ -49,7 +49,7 @@ hr {
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
- /* button back */
+ /* button */
 .contButton{
     display: flex;
     justify-content: end;
@@ -82,7 +82,20 @@ hr {
     
     opacity: 1;
 }
- 
+
+.button {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    
+    font-size: 20px;
+
+    margin: 10px;
+    background-color: rgb(186, 232, 250);
+    border-image: 1px solid black;
+    border-radius: 4px;
+    border-bottom: outset;
+    box-shadow: 0px 2.5px #585858;
+}
 
 /* card */
 
@@ -191,4 +204,31 @@ footer{
   
   footer a:hover {
     text-decoration: none;
+  }
+
+  .disappear {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .display {
+    position: fixed;
+    font-size: 40px;
+    
+    margin: 25%;
+    margin-bottom: 800px;
+    width: 50%;
+    height: 150px;
+  
+    padding: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background-image:linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%) ;
+    border-style: outset;
+    
+    z-index: 1;
   }

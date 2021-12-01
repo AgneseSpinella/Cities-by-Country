@@ -1,3 +1,7 @@
+import { render, API } from "./utils.js";
+
+
+
 const wrapperCountries = document.querySelector(".wrapper_countries");
 const wrapperCard = document.querySelector(".wrapper_card");
 const divFra = document.querySelector("#fra");
@@ -7,18 +11,22 @@ const divPort = document.querySelector("#port");
 const divGre = document.querySelector("#gre");
 const divGer = document.querySelector("#ger");
 
+
+
 const displayCountries = (card) => {
     const itemFra = card.map((card) => {
         if (card.country.name == "Francia") {
             return `
       <div class="card">
         <img class="imgCard" src="${card.cover_image_url}"></img>
-        <h2>${card.name}</h2>
+        <h2 href="view-${card.id}">${card.name}</h2>
         <p>${card.content}</p>
-        <button class="button" id="read">Leggi tutto</button>
+        <div >
+        <a class="button" href="#view" id="read">Leggi tutto</a>
+        </div>
       </div>`;
         }
-            
+
     })
         .join("");
     divFra.innerHTML = itemFra;
@@ -35,7 +43,7 @@ const displayCountries = (card) => {
             </div>`;
         }
     })
-   
+
         .join("");
     divIta.innerHTML = itemIta;
 
@@ -94,8 +102,8 @@ const displayCountries = (card) => {
     divGer.innerHTML = itemGer;
 
 
+}
 
-};  
 
 
 export { displayCountries }
