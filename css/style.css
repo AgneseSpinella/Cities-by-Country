@@ -239,9 +239,6 @@ footer{
 
 @media all and (max-width: 990px){
     
-    body {
-        margin-left: 10px;
-    }
 
      main h1 {
         width: 100%;
