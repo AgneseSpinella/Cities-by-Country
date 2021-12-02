@@ -5,7 +5,6 @@ import { render, API } from "./utils.js";
 const wrapperCountries = document.querySelector(".wrapper_countries");
 const wrapperCard = document.querySelector(".wrapper_card");
 const divFra = document.querySelector("#fra");
-const p = document.querySelector("#fra")[2]
 const divIta = document.querySelector("#ita");
 const divSpa = document.querySelector("#spa");
 const divPort = document.querySelector("#port");
@@ -97,49 +96,52 @@ const displayCountries = (card) => {
               <p>${card.content}</p>
             </div>`;
         }
-        
+
+        const View = () => {
+            let newtext = document.createTextNode(`Latitude:${card.latitude}  Longitude:${card.longitude} Time zone:${card.time_zone} `)
+            let button = document.createElement("button")
+            button.textContent = "Chiudi"
+            button.setAttribute("id", "exit")
+            button.classList.add("button")
+            wrapperModal.append(newtext, button)
+            wrapperModal.classList.add("display")
+            const boh = document.querySelector("#exit")
+            exit.addEventListener("click", () => {
+                wrapperModal.classList.remove("display")
+                wrapperModal.classList.add("disappear")
+                wrapperModal.classList.remove(...wrapperModal.classList);
+                wrapperModal.innerHTML = ""
+            })
+        }
+
 
         const wrapperModal = document.querySelector(".wrapper_modal")
         const modal = document.querySelector("#showCard")
-     /*    function x() {
-            if (card.country.name === "Francia") {
-                let newtext = document.createTextNode(card.meta_description)
-                wrapperModal.appendChild(newtext)
-                console.log(wrapperModal)
-            }
+        const btn = document.querySelectorAll(".button")
+        btn.forEach(function (btn) {
+            btn.addEventListener("click", () => {
+                switch (card.name) {
+                    case "Parigi":
+                        View()
+                        break;
+                    case "Nizza":
+                        View()
+                        break;
+                    case "Lione":
+                        View()
+                        break;
+                }
 
-                };*/ 
-    
-        
-        
-         const btn = document.querySelectorAll(".button")
-         btn.forEach(function (btn) {
-             btn.addEventListener("click", () => {
-                if (card.name === "Parigi") {
-                    let newtext = document.createTextNode(`Latitude:${card.latitude}  Longitude:${card.longitude} Time zone:${card.time_zone} `)
-                    let button = document.createElement("button")
-                    button.textContent = "Chiudi"
-                    button.setAttribute("id","boh")
-                    button.classList.add("button")
-                    wrapperModal.append(newtext,button)
-                    wrapperModal.classList.add("display")
-                      const boh = document.querySelector("#boh")
-                             boh.addEventListener("click", () => {
-                                wrapperModal.classList.remove("display")
-                                wrapperModal.classList.add("disappear")
-                                wrapperModal.classList.remove(...wrapperModal.classList); 
-                                wrapperModal.innerHTML = ""
-                             })}
-                     ;
-             }
-             )
-         })
+            })
+        })
     })
         .join("");
     divGer.innerHTML = itemGer;
 
 
 }
+
+
 
 
 
