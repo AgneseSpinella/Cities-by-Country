@@ -13,4 +13,4 @@ const loadCountries= async () => {
     }
 
 /* Chiamata funzioni */
-loadCountries();
+document.addEventListener("DOMContentLoaded",loadCountries);
