@@ -235,3 +235,40 @@ footer{
 	}
 }
 
+/* responsive */
+
+@media all and (max-width: 990px){
+    
+    body {
+        margin-left: 10px;
+    }
+
+     main h1 {
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        line-height: 50px;    
+    }
+
+
+    .flex-container-menu {
+        flex-direction: column;
+
+    }
+    ul {
+ 
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .wrapper_card{
+        max-width: 800px;
+    }
+
+    #back {
+        float: left;
+    }
+
+
+    
+}
