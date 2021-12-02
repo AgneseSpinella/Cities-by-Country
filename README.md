@@ -12,4 +12,4 @@ Built with:
 
 > API: https://api.musement.com/api/v3/cities.json
 
-Take a look on [Github Pages] (https://agnesespinella.github.io/Cities-by-Country/)
+Take a look on [Github Pages](https://agnesespinella.github.io/Cities-by-Country/)
