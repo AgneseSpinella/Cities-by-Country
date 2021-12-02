@@ -105,7 +105,7 @@ const displayCountries = (card) => {
             button.classList.add("button")
             wrapperModal.append(newtext, button)
             wrapperModal.classList.add("display")
-            const boh = document.querySelector("#exit")
+            const exit = document.querySelector("#exit")
             exit.addEventListener("click", () => {
                 wrapperModal.classList.remove("display")
                 wrapperModal.classList.add("disappear")
