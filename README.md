@@ -2,7 +2,7 @@
 
 # Cities by country
 ## _Edgemony Code Week project_  
-##### Web app for tourist information. Responsive for most common device
+##### Web app for tourist information. Responsive for most common smartphone
 
 
 Built with:
