@@ -109,7 +109,7 @@ hr {
     border-radius: 4px;
     border-bottom: outset;
     box-shadow: 0px 2.5px #585858;
-    filter: grayscale(0.55);
+    filter: grayscale(0.45);
 }
 
 .card {
