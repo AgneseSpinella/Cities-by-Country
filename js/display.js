@@ -92,8 +92,6 @@ const displayCountries = (card) => {
         .join("");
     divGer.innerHTML = itemGer;
 
-
-
 };  
 
 
