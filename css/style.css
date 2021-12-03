@@ -237,7 +237,7 @@ footer{
 
 /* responsive */
 
-@media all and (max-width: 990px){
+@media all and (max-width: 768px){
     
 
      main h1 {
