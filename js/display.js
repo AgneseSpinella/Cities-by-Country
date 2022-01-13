@@ -9,7 +9,7 @@ const divGer = document.querySelector("#ger");
 
 const displayCountries = (card) => {
     const itemFra = card.map((card) => {
-        if (card.country.name == "Francia") {
+        if (card.country.id == 60) {
             return `
       <div class="card">
         <img class="imgCard" src="${card.cover_image_url}"></img>
@@ -25,7 +25,7 @@ const displayCountries = (card) => {
 
 
     const itemIta = card.map((card) => {
-        if (card.country.name == "Italia") {
+        if (card.country.id == 82) {
             return `
             <div class="card">
               <img class="imgCard" src="${card.cover_image_url}"></img>
@@ -40,7 +40,7 @@ const displayCountries = (card) => {
 
 
     const itemSpa = card.map((card) => {
-        if (card.country.name == "Spagna") {
+        if (card.country.id == 161) {
             return `
             <div class="card">
               <img class="imgCard" src="${card.cover_image_url}"></img>
@@ -54,7 +54,7 @@ const displayCountries = (card) => {
 
 
     const itemPort = card.map((card) => {
-        if (card.country.name == "Portogallo") {
+        if (card.country.id == 139) {
             return `
             <div class="card">
               <img class="imgCard" src="${card.cover_image_url}"></img>
@@ -67,7 +67,7 @@ const displayCountries = (card) => {
     divPort.innerHTML = itemPort;
 
     const itemGre = card.map((card) => {
-        if (card.country.name == "Grecia") {
+        if (card.country.id == 66) {
             return `
             <div class="card">
               <img class="imgCard" src="${card.cover_image_url}"></img>
@@ -80,7 +80,7 @@ const displayCountries = (card) => {
     divGre.innerHTML = itemGre;
 
     const itemGer = card.map((card) => {
-        if (card.country.name == "Germania") {
+        if (card.country.id == 64) {
             return `
             <div class="card">
               <img class="imgCard" src="${card.cover_image_url}"></img>
