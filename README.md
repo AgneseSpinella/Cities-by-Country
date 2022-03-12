@@ -1,4 +1,4 @@
-<img src="./images/title.png" width="100%" height="100" >
+<img src="./images/img1.png" width="100%" height="100" >
 
 # Cities by country
 ## _Edgemony Code Week project_  
